@@ -1,0 +1,55 @@
+@use 'variaveis';
+
+.header {
+    background-color: variaveis.$colorBackground;
+    
+    .container{
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    img {
+        margin-top: 8px;
+        width: 130px;
+        padding: 10px;
+
+        @media (max-width: 768px) {
+            width: 100px;
+        }
+    }
+
+    &__lista {
+        display: flex;
+        align-items: center;
+        
+        &__item {
+            font-weight: bold;
+            font-size: 20px;
+            margin-left: 15px;
+            
+            a {
+                font-size: 20px;
+                color: variaveis.$colorTextoPrincipal;
+                text-transform: uppercase;
+                transition: color 0.5s ease;
+
+                @media (max-width:768px) {
+                    font-size: 14px;
+                }
+
+                &:hover {
+                    color: variaveis.$colorTextoPrincipal;
+                    transition: color 0.5s ease;
+                    font-size: 21px;
+                    color: variaveis.$colorTextoSecundario;
+
+                    @media (max-width: 768px) {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}

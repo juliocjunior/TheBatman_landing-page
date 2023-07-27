@@ -1,0 +1,68 @@
+.elenco {
+    width: 80%;
+    margin: 0 auto;
+
+    @media (max-width:768px) {
+        margin-top: 30px;
+    }
+
+    h2 {
+        color: #e5ca53;
+    }
+
+    &__lista {
+        background-color: #fffcfc13;
+        display: flex;
+        overflow-x: auto;
+        border-radius: 10px;
+        
+        
+        &__item {
+            margin-top: 50px;
+            margin-bottom: 30px;
+            margin-left: 50px;
+
+            @media (max-width: 768px) {
+                margin-top: 25px;
+                margin-bottom: 0px;
+                margin-left: 25px;
+            }
+            
+            &:last-child {
+                margin-right: 50px;
+
+                @media (max-width:768px) {
+                    margin-right: 25px;
+                }
+            }
+
+            &__nome {
+                color: #fff;
+                margin-bottom: 4px;
+            }
+
+            &__personagem {
+                font-size: 16px;
+            }
+            
+            img {
+                box-shadow: 0px 0px 14px 10px rgba(0, 0, 0, 0.5);
+                border: 4px #000000bf solid;
+                border-radius: 10px;
+                width: 150px;
+
+                @media (max-width: 768px) {
+                    width: 80px;
+                }
+            }
+        }
+    }
+
+    .linha {
+        background-color: #ffffff7b;
+        height: 5px;
+        width: 95%;
+        border-radius: 10px;
+        margin: 100px auto;
+    }
+}

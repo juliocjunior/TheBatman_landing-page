@@ -1,0 +1,54 @@
+@use 'variaveis';
+
+.hero {
+    display: flex;
+
+    &__content {
+        margin-top: 18%;
+        margin-left: 10%;
+        position: absolute;
+        text-shadow: 5px 3px 5px rgba(0, 0, 0, 0.653);
+        
+        h2 {
+            font-size: 100px;
+            color: variaveis.$colorTextoPrincipal;
+            margin-bottom: 0;
+
+            @media (max-width:1024px) {
+                font-size: 75px;
+            }
+
+            @media (max-width: 768px) {
+                font-size: 50px;
+            }
+        }
+        
+        p {
+            font-size: 40px;
+            color: variaveis.$colorTextoHero;
+            
+            @media (max-width:1024px) {
+                font-size: 30px;
+            }
+
+            @media (max-width: 768px) {
+                font-size: 20px;
+            }
+        }
+    }
+
+    &__background {
+        width: 75%;
+        margin-left: 25%;
+        float: right;
+
+        @media (max-width:1024px) {
+            width: 100%;
+            margin-left: 0;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}

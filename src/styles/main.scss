@@ -1,0 +1,42 @@
+@use 'header';
+@use 'hero';
+@use 'elenco';
+@use 'sinopse';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+body {
+    color: #aaaaaa;
+    background-color: #000;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 80px;
+    margin-bottom: 40px;
+
+    @media (max-width: 1024px) {
+        font-size: 60px;
+        margin-bottom: 30px;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+}
+
