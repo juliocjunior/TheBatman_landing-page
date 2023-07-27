@@ -1,3 +1,3 @@
-function recarregaPagina() {
-    window.location.reload();
+function recarregaPagina(){
+    window.location.reload()
 }
