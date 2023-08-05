@@ -16,8 +16,8 @@
 }
 
 body {
-    color: #aaaaaa;
-    background-color: #000;
+    color: variaveis.$colorTextoPrincipal;
+    background-color: variaveis.$colorBackground;
 }
 
 .container {
