@@ -2,6 +2,7 @@
 @use 'hero';
 @use 'elenco';
 @use 'sinopse';
+@use 'variaveis';
 
 
 * {
@@ -42,5 +43,15 @@ body {
         font-size: 40px;
         margin-bottom: 20px;
     }
+}
+::-webkit-scrollbar {
+    background-color: variaveis.$colorElencoListaBackground;
+    height: 8px;
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: variaveis.$colorTextoPrincipal;
+    border-radius: 10px;
 }
 
